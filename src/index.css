@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+:root{
+    --primary-color:#9e0e09
+}
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    text-decoration: none;
+    list-style-type: none;
+  
+   
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Baloo 2', cursive;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+.show{
+    display:block;
+}
+.hidden{
+    display: none;
+}
+.full-height{
+    height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Media queries section*/
+
+@media screen  and (max-width:1560px){
+    html{
+        font-size:60%;
+    }
+      
 }
+@media screen  and (max-width:1400px){
+    html{
+        font-size:55%;
+    }
+      
+}
+@media screen  and (max-width:1250px){
+    html{
+        font-size:55%;
+    }
+      
+}
+@media screen  and (max-width:1200px){
+    html{
+        font-size:50%;
+    }
+    .about-us-wrapper, .pricing-wrapper{
+        flex-direction: column;
+    }
+    .about-line,.pricing-line{
+        display: none;
+    }
+    
+      
+}
+@media screen and (max-width:900px) {
+    html{
+        font-size: 45%;
+    }
+    .contact-info{
+        width: 100%;
+    }
+    .contact-sec{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .contact-line{
+        display: none;
+    }
+    .headings{
+        font-size: 10rem;
+
+    }
+
+
+    
+}
+@media screen and (max-width:792px){
+    html{
+        font-size: 40%;
+    }
+   .pricing-cards{
+      flex-wrap: wrap;
+   }
+   .headings{
+    font-size: 8rem;
+   }
+}
+
+@media screen and (max-width:500px){
+    html{
+        font-size: 35%;
+    }
+   .headings{
+    font-size: 5rem;
+   }
+   .footer-wrapper{
+       flex-direction: column;
+   }
+
+}
+@media screen and (max-width:360px){
+    html{
+        font-size: 25%;
+    }
+   
+}
+

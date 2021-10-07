@@ -1,0 +1,132 @@
+.hero-sec-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-image:url('../../assets//images/dark-bg.jpeg');
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+.hero-sec{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-sec-content{
+    color: whitesmoke;
+    font-size: 4rem;
+    padding: 1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hero-sec-btn{
+    position: relative;
+    color: white;
+    padding: 1rem 2rem;
+    width: 30rem;
+    height: 6rem;
+    margin: 1rem;
+    font-size:2rem;
+    background-color: var(--primary-color);
+    outline: none;
+    border-radius:3rem;
+    border:1 px solid  var(--primary-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin: 4rem 0;
+}
+.hero-sec-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: inherit;
+    height:inherit;
+    background-color: green;
+    transform: skewX(-45deg);
+    background: linear-gradient(to right,rgba(236, 229, 229, 0.5),rgba(0,0,0,0.5));
+    opacity: 0;
+  
+
+}
+.hero-sec-btn:hover::before{
+    animation: animate-btn 0.6s forwards ;
+}
+
+@keyframes animate-btn{
+    0%{
+        left: -50%;
+        opacity: 0;
+
+    }
+    25%{
+        opacity:1;
+        left: -20%;
+    }
+    45%{
+     
+        left: -10%;
+    }
+
+    65%{
+        left:0
+    }
+    100%{
+        left:125%
+       
+    }
+}
+.headings{
+    position: relative;
+    color: whitesmoke;
+    font-size: 15rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.781);
+    width: 100vw;
+    min-height: 20rem;
+  
+}
+.headings span{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0; 
+}
+.headings-1{ 
+    animation:animate-heading 12s 0s infinite  ;
+}
+.headings-2{
+  
+    animation:animate-heading 12s 3s infinite  ;
+}
+.headings-3{
+   
+    animation:animate-heading 12s 6s infinite ;
+}
+.headings-4{
+    
+    animation:animate-heading 12s 9s  infinite ;
+}
+@keyframes animate-heading{
+    0%{
+      letter-spacing: 1rem;
+      opacity: 1;
+    }
+    25%{
+        letter-spacing:3rem;
+        opacity: 0;
+    }
+   
+     100%{
+        letter-spacing:3rem;
+        opacity: 0;
+     }
+}
