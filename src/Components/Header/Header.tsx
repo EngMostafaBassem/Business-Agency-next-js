@@ -6,7 +6,7 @@ const Header=()=>{
       <div  className= {toggle?"header-wrapper full-height":"header-wrapper "}>
        <div className='header'>
            <div className="header-text">
-             <span className="text-char">C</span>ode<span className="text-char">A</span>nd<span className="text-char">C</span>reate
+             <span className="text-char">L</span>io<span className="text-char">no</span>mo
            </div>
            <div className="header-menu" onClick={()=>setToggle((toggle)=>!toggle)}>
              <div className="line first-line"></div>

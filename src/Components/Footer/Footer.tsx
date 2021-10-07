@@ -9,7 +9,7 @@ const Footer=()=>{
                <li><a href="#">Pricing</a></li>
                <li><a href="#">Contact</a></li>
            </ul>
-           <p className="copyright">Copyright © CodeAndCreate All Rights Reserved</p>
+           <p className="copyright">Copyright © 2021 All Rights Reserved</p>
 
         </div>
     )
