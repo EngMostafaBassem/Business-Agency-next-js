@@ -16,7 +16,7 @@
     color: white;
     font-size: 6rem;
     text-transform: uppercase;
-    height: 2rem;
+   
 }
 .about-line{
     width: 20%;
@@ -31,8 +31,8 @@
     align-items: center;
 }
 .video-wrapper{
- width:85rem;
- height:40rem;
+ width:80%;
+ height:auto;
  opacity: 0.6;
  margin-right: 2rem;
 }

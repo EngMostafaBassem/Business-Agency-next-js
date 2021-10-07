@@ -40,14 +40,7 @@ body{
 @media screen  and (max-width:1400px){
     html{
         font-size:55%;
-    }
-      
-}
-@media screen  and (max-width:1250px){
-    html{
-        font-size:55%;
-    }
-      
+    }    
 }
 @media screen  and (max-width:1200px){
     html{
@@ -58,14 +51,10 @@ body{
     }
     .about-line,.pricing-line{
         display: none;
-    }
-    
-      
+    }  
 }
 @media screen and (max-width:900px) {
-    html{
-        font-size: 45%;
-    }
+    
     .contact-info{
         width: 100%;
     }
@@ -77,7 +66,7 @@ body{
         display: none;
     }
     .headings{
-        font-size: 10rem;
+        font-size: 8rem;
 
     }
 
@@ -85,33 +74,52 @@ body{
     
 }
 @media screen and (max-width:792px){
-    html{
-        font-size: 40%;
-    }
+   
    .pricing-cards{
       flex-wrap: wrap;
    }
    .headings{
-    font-size: 8rem;
+    font-size: 6rem;
+    letter-spacing: 0.8rem;
    }
+   
 }
 
 @media screen and (max-width:500px){
-    html{
-        font-size: 35%;
+  
+    @keyframes animate-heading{
+        0%{
+          letter-spacing: 0.5rem;
+          opacity: 1;
+        }
+        25%{
+            letter-spacing:1rem;
+            opacity: 0;
+        }
+       
+         100%{
+            letter-spacing:1.5rem;
+            opacity: 0;
+         }
+    }
+    
+    .video-wrapper{
+        width: 50rem;
     }
    .headings{
-    font-size: 5rem;
+    font-size: 4rem;
+   }
+   .hero-sec-content{
+       font-size:2rem;
    }
    .footer-wrapper{
        flex-direction: column;
    }
+   .contacts-wrapper{
+       min-height: auto;
+   }
 
 }
-@media screen and (max-width:360px){
-    html{
-        font-size: 25%;
-    }
-   
-}
+
+
 
